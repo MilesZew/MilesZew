@@ -17,7 +17,7 @@ if (window.top !== window.self) {
   window.addEventListener('load', () => {
     let templates = [
       {pos: [225, 343], src: 'https://cdn.discordapp.com/attachments/959997011598401557/960251171191283722/HORNET.png', width: 84, height: 78},
-      {pos: [247, 1339], src: 'https://github.com/Pookachu/HKPLACE/blob/main/Dotted_Overlay_PNGs/!dotted_RadianceTemplate.png?raw=true', width: 94, height: 105},
+      {pos: [246, 1338], src: 'https://github.com/Pookachu/HKPLACE/blob/main/Dotted_Overlay_PNGs/!dotted_RadianceTemplate.png?raw=true', width: 96, height: 107},
       {pos: [176, 386], src: 'https://raw.githubusercontent.com/Pookachu/HKPLACE/main/Dotted_Overlay_PNGs/!dotted_ELDEN_RING.png', width: 47, height: 64}
     ]
 
@@ -28,6 +28,17 @@ if (window.top !== window.self) {
         console.log(i.src)
 
         document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(img)
+
+        const camera = document.querySelector("mona-lisa-embed").shadowRoot.querySelector("mona-lisa-camera");
+        const waitForPreview = setInterval(() => {
+            const preview = camera.querySelector("mona-lisa-pixel-preview");
+            if (preview) {
+              clearInterval(waitForPreview);
+              const style = document.createElement('style')
+              style.innerHTML = '.pixel { clip-path: polygon(-20% -20%, -20% 120%, 37% 120%, 37% 37%, 62% 37%, 62% 62%, 37% 62%, 37% 120%, 120% 120%, 120% -20%); }'
+              preview.shadowRoot.appendChild(style);
+            }
+        }, 100);
     })
 
   }, false);
