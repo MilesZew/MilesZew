@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multiple Images RPlace Template
 // @namespace    http://tampermonkey.net/
-// @version      1
+// @version      1.0.1
 // @description  try to take over the canvas!
 // @author       MilesZew
 // @match        https://hot-potato.reddit.com/embed*
