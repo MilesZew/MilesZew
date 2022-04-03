@@ -17,7 +17,7 @@ if (window.top !== window.self) {
   window.addEventListener('load', () => {
     let templates = [
       {pos: [225, 343], src: 'https://cdn.discordapp.com/attachments/959997011598401557/960251171191283722/HORNET.png', width: 84, height: 78},
-      {pos: [247, 1339], src: 'https://cdn.discordapp.com/attachments/959600167756111973/960271104306475098/radianceonlyfixed.png', width: 94, height: 105},
+      {pos: [247, 1339], src: 'https://github.com/Pookachu/HKPLACE/blob/main/Dotted_Overlay_PNGs/!dotted_RadianceTemplate.png?raw=true', width: 94, height: 105},
       {pos: [176, 386], src: 'https://raw.githubusercontent.com/Pookachu/HKPLACE/main/Dotted_Overlay_PNGs/!dotted_ELDEN_RING.png', width: 47, height: 64}
     ]
 
