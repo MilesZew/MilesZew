@@ -21,10 +21,12 @@ if (window.top !== window.self) {
     ]
 
     templates.forEach(i => {
+      
       let img = document.createElement('img')
+      let undotted = document.createElement('img')
       img.src = i.src
       img.style = `z-index: 10000 !important; position: absolute;left: ${i.pos[0]}px;top: ${i.pos[1]}px;image-rendering: pixelated;width: ${i.width}px;height: ${i.height}px;`
-        console.log(i.src)
+      
 
         document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(img)
 
