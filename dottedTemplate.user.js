@@ -11,25 +11,25 @@
 // ==/UserScript==
 
 (function() {
-  'use strict';
+    'use strict';
 
 if (window.top !== window.self) {
-window.addEventListener('load', () => {
-  let templates = [
-    {pos: [225, 343], src: 'https://cdn.discordapp.com/attachments/959997011598401557/960251171191283722/HORNET.png', width: 84, height: 78},
-    {pos: [247, 1339], src: 'https://cdn.discordapp.com/attachments/959997011598401557/960259616569188412/dotted_RadianceTemplate.png', width: 94, height: 105}
-  ]
+  window.addEventListener('load', () => {
+    let templates = [
+      {pos: [225, 343], src: 'https://cdn.discordapp.com/attachments/959997011598401557/960251171191283722/HORNET.png', width: 84, height: 78},
+      {pos: [247, 1339], src: 'https://cdn.discordapp.com/attachments/959600167756111973/960271104306475098/radianceonlyfixed.png', width: 94, height: 105}
+    ]
 
-  templates.forEach(i => {
-    let img = document.createElement('img')
-    img.src = i.src
-    img.style = `position: absolute;left: ${i.pos[0]}px;top: ${i.pos[1]}px;image-rendering: pixelated;width: ${i.width}px;height: ${i.height}px;`
-      console.log(i.src)
+    templates.forEach(i => {
+      let img = document.createElement('img')
+      img.src = i.src
+      img.style = `z-index: 10000 !important; position: absolute;left: ${i.pos[0]}px;top: ${i.pos[1]}px;image-rendering: pixelated;width: ${i.width}px;height: ${i.height}px;`
+        console.log(i.src)
 
-      document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(img)
-  })
+        document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(img)
+    })
 
-}, false);
+  }, false);
 
 }
 })();
