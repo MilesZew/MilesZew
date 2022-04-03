@@ -17,7 +17,7 @@ if (window.top !== window.self) {
   window.addEventListener('load', () => {
     let templates = [
       {pos: [225, 343], src: 'https://cdn.discordapp.com/attachments/959997011598401557/960251171191283722/HORNET.png', width: 84, height: 78},
-      {pos: [246, 1339], src: 'https://github.com/Pookachu/HKPLACE/blob/main/Dotted_Overlay_PNGs/!dotted_RadianceTemplate.png?raw=true', width: 96, height: 106}
+      {pos: [246, 1341], src: 'https://github.com/Pookachu/HKPLACE/blob/main/Dotted_Overlay_PNGs/!dotted_RadianceTemplate.png?raw=true', width: 96, height: 106}
     ]
 
     templates.forEach(i => {
