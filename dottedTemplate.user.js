@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multiple Images RPlace Template
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1
 // @description  try to take over the canvas!
 // @author       MilesZew
 // @match        https://hot-potato.reddit.com/embed*
@@ -17,7 +17,8 @@ if (window.top !== window.self) {
   window.addEventListener('load', () => {
     let templates = [
       {pos: [225, 343], src: 'https://cdn.discordapp.com/attachments/959997011598401557/960251171191283722/HORNET.png', width: 84, height: 78},
-      {pos: [247, 1339], src: 'https://cdn.discordapp.com/attachments/959600167756111973/960271104306475098/radianceonlyfixed.png', width: 94, height: 105}
+      {pos: [247, 1339], src: 'https://cdn.discordapp.com/attachments/959600167756111973/960271104306475098/radianceonlyfixed.png', width: 94, height: 105},
+      {pos: [176, 386], src: 'https://raw.githubusercontent.com/Pookachu/HKPLACE/main/Dotted_Overlay_PNGs/!dotted_ELDEN_RING.png', width: 47, height: 64}
     ]
 
     templates.forEach(i => {
